@@ -1,18 +1,29 @@
-const inputBox = document.querySelector("#input-text");
-const h1Btn = document.querySelector("#h1");
-const h2Btn = document.querySelector("#h2");
-const h3btn = document.querySelector("#h3");
-const outpu = document.querySelector("#output");
+var inputValue = document.querySelector("#input-text");
+var btn  = document.querySelector("#but");
+var output = document.querySelector("#out");
 
-inputBox.addEventListener("input", () => {
-    outpu.innerText = inputBox.value;
-});
+var serverUrl = "https://nftbaazarapi.rawheatg.repl.co/product";
+
+function constructURL(text){
+    return serverUrl + "?" + "text=" + text;
+}
+
+function clickHandler(){
+    var value = inputValue.value;
+    fetch(serverUrl)
+    .then(response => response.json())
+    .then(data => {
+        for(var i=0; i<data.data.length; i=i+1){
+            if(Number(data.data[i].price) > 500){
+                
+                data.data[i].price.style.color = "red";
+            }
+        }
+    })
+}
 
 
-h1Btn.addEventListener('click', () => {
-    outpu.innerHTML = `<h1>${inputBox.value}</h1>`
-});
 
-h2Btn.addEventListener('click', () => {
-    outpu.innerHTML = '<h2>${inputBox.value}</h2>'
-});
+
+
+btn.addEventListener("click", clickHandler);
