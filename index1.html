@@ -1,4 +1,4 @@
-<!--Create a password checker web app. If password is lesser than 10 characters then show an error to user otherwise show success. Someone can ask to make the submit button disabled. Some can ask to make the input field green or red depending on input.-->
+<!--Create a web app where I can input a text. Now, create three buttons h1, h2, h3. When I click on any of the button, the text should become h1, h2, or h3-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,12 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1 >Heading1</h1>
-    <h2 >Heading2</h2>
-    <button class="b1" >Primary</button>
-    <button class="b2">Secondary</button>
+    <label for="input">Type here: <input type="text" id="input" /></label>
+
+    <div>
+        <button id="h1" >H1</button>
+        <button id="h2" >H1</button>
+        <button id="h3" >H1</button>
+        
+    </div>
+    <div id="out"></div>
+    <script src="appone.js" type="text/javascript"></script>
 </body>
 </html>
