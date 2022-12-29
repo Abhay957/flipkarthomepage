@@ -1,21 +1,25 @@
-var inp = document.querySelector("#input");
-var h1 = document.querySelector("#h1");
+var input = document.querySelector("#input-box");
+var btn = document.querySelector("#b-one");
 var output = document.querySelector("#out");
-var h2 = document.querySelector("#h2");
-var h3 = document.querySelector("#h3");
 
+btn.disabled = true;
 
-h1.addEventListener("click", () => {
-    output.innerText = inp.value;
-    output.style.fontSize = "32px";
+input.addEventListener("input", () => {
+    if(input.value.length >= 10){
+        btn.disabled = false;
+        input.style.backgroundColor = "green";
+    }
+    else{
+        btn.disabled = true;
+        input.style.backgroundColor = "red";
+    }
 })
 
-h2.addEventListener("click", () => {
-    output.innerText = inp.value;
-    output.style.fontSize = "24px";
-})
-
-h3.addEventListener("click", ()=> {
-    output.innerText = inp.value;
-    output.style.fontSize = "18.72px";
+btn.addEventListener("click", () => {
+    if(input.value.length >= 10){
+        output.innerText = "!Success!";
+    }
+    else{
+        output.innerText = "Error";
+    }
 })

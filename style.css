@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
-:root{
-    --primary-color: #cbd5e1;
-}
-
-
-
 body{
-    font-family: 'Sevillana', cursive;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: black;
 }
 
+#out{
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+}
