@@ -1,20 +1,21 @@
-var input = document.querySelector("#input-box");
-var bone = document.querySelector("#b-one");
-var btwo = document.querySelector("#b-two");
-var bthree = document.querySelector("#b-three");
-var output = document.querySelector("#out");
+var inputOne = document.querySelector("#input-one");
+var inputTwo = document.querySelector("#input-two");
+var btn = document.querySelector("#sub");
+var paswrd = document.querySelectorAll(".password");
+btn.disabled = true;
 
-bone.addEventListener("click", () => {
-    output.innerText = input.value;
-    output.style.color = "green";
+inputOne.addEventListener("input", () => {
+    console.log(inputOne.value);
 })
 
-btwo.addEventListener("click", () => {
-    output.innerText = input.value;
-    output.style.color = "red";
-})
 
-bthree.addEventListener("click", () => {
-    output.innerText = input.value;
-    output.style.color = "blue";
-})
+// for(var i=0;i<paswrd.length; i++){
+//     paswrd[i].addEventListener("input", () => {
+//        if(inputOne.value === inputTwo.value){
+//         btn.disabled = false;
+//        }
+//        else{
+//         btn.disabled = true;
+//        }
+//     })  
+// }
