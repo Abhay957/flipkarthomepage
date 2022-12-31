@@ -1,4 +1,4 @@
-<!--Create color variables in CSS. Two colors: primary and secondary. Now make your h1 of primary color, h2 of secondary color. Make two buttons, primary and secondary using the same color. Can you also set a font from Google Font?-->
+<!--Create a web app where I can input a text. Now create two buttons + and -. On clicking + increase the fontSize by 2px and vice versa.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="h-one">HEADING1</h1>
-    <h2 class="h-two">HEADING2</h2>
-    <h3>
-    <button id="b-one">Primary</button>
-    </h3>
-    <button id="b-two">Secondary</button>
+    <label for="input-box">Type here: <input type="text" id="input-box" /></label>
+    <div>
+        <button id="b-one">+</button>
+        <button id="b-two">-</button>
+    </div>
+    <div id="out"></div>
+    <script src="appone.js" type="text/javascript"></script>
     
 </body>
 </html>
