@@ -1,21 +1,25 @@
-var inputOne = document.querySelector("#input-one");
-var inputTwo = document.querySelector("#input-two");
+var input = document.querySelector("#input-box");
 var btn = document.querySelector("#sub");
-var paswrd = document.querySelectorAll(".password");
+var output = document.querySelector("#out");
 btn.disabled = true;
 
-inputOne.addEventListener("input", () => {
-    console.log(inputOne.value);
+input.addEventListener("input", () => {
+    if(input.value.length >= "10"){
+    btn.disabled = false;
+    input.style.backgroundColor = "red";
+    }
+    else{
+        btn.disabled = true;
+    }
+})
+
+btn.addEventListener("click", () => {
+    if(input.value.length >= 10){
+        output.innerText = "Success";
+    }
+    else{
+        output.innerText = "Error";
+    }
 })
 
 
-// for(var i=0;i<paswrd.length; i++){
-//     paswrd[i].addEventListener("input", () => {
-//        if(inputOne.value === inputTwo.value){
-//         btn.disabled = false;
-//        }
-//        else{
-//         btn.disabled = true;
-//        }
-//     })  
-// }
