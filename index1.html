@@ -1,4 +1,6 @@
-<!--Create a password checker web app. If password is lesser than 10 characters then show an error to user otherwise show success. Someone can ask to make the submit button disabled. Some can ask to make the input field green or red depending on input.-->
+<!-- Coding: Create a stock profit or loss calculator. Take name of stock and buying price of the stock as input from the user. Get the current price of the stock from the following API –
+
+[https://stock-api.desaihetav.repl.co/current-price/STOCK_ID](https://stock-api.desaihetav.repl.co/current-price/STOCK_ID) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +10,13 @@
     <title>Document</title>
 </head>
 <body>
-    <label>Enter password: <input type="text" id="input-box" /></label>
-    <button id="sub">Submit</button>
+    <label>Name of stock: <input type="text" id="stock-name"/></label>
+    <div>
+        <label>Buying price: <input type="number" id="buying-price" /></label>
+    </div>
+    <div>
+        <button id="fetch">Fetch API</button>
+    </div>
     <div id="out"></div>
     <script src="appone.js" type="text/javascript"></script>
 </body>
