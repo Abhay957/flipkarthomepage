@@ -1,19 +1,26 @@
-<!-- Create a password checker web app. If password is lesser than 10 characters then show an error to user otherwise show success. -->
+<!-- create two input fields in which user can type, one for text and other for number ; on click of button "print" you have to display text mutliple of input number(suppose number entered by user is 3 you have to display text 3 time on the scree)
+     eg : text : Manish
+        number : 3
+        output :  Manish
+                  Manish
+                  Manish
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ if input number is even then change color of text to tomato else change to blue -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <label>Enter password: <input type="text" id="input-text" /></label>
+ </head>
+ <body>
+    <label>Enter text: <input type="text" id="input-text" /></label>
+    <label>Enter number: <input type="number" id="input-number" /></label>
     <div>
-        <button id="sub-btn">Submit</button>
+        <button id="sub-btn">Print</button>
     </div>
     <div id="out-div"></div>
     <script src="appone.js" type="text/javascript"></script>
-</body>
-</html>
+ </body>
+ </html>

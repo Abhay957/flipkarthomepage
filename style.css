@@ -1,43 +1,7 @@
-body{
-    text-align: center;
-    background-color: var(--third-color);
-}
 :root{
-    --primary-color: darkblue;
-    --secondary-color: blue;
-    --third-color : black;
-    --fourth-color: white;
+    --primary-color: red;
 }
-#btn-one{
-    padding: 2rem;
-    background-color: blue;
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-}
-#b-one{
-    text-decoration: none;
-    border: 0.5px solid var(--primary-color);
-    padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: larger;
-    font-weight: bold;
-}
-#b-two{
-    text-decoration: none;
-    border: 1px solid var(--secondary-color);
-    padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 0.5rem;
-    font-size: large;
-    font-weight: bold;
-}
-.whole{
-    background-color: var(--fourth-color);
+
+#out-div{
+    color: var(--primary-color);
 }

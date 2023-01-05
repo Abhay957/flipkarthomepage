@@ -1,20 +1,20 @@
-var input = document.querySelector("#input-text");
+var inputText = document.querySelector("#input-text");
+var inputNumber = document.querySelector("#input-number");
 var btn = document.querySelector("#sub-btn");
 var output = document.querySelector("#out-div");
-btn.disabled = true;
-input.addEventListener("input",() => {
-    if(input.value.length >= 10){
-        btn.disabled = false;
+
+btn.addEventListener("click",() => {
+    if(inputNumber.value % 2 === 0){
+        for(var i=0;i<inputNumber.value;i++){
+            output.innerText += inputText.value + "\n";
+            output.style.color = "red";
+        }
     }
     else{
-        btn.disabled = true;
+        for(var i=0;i<inputNumber.value;i++){
+            output.innerText += inputText.value + "\n";
+            output.style.color = "blue";
+        }
     }
-})
-btn.addEventListener("click", () => {
-    if(input.value.length >= 10){
-        output.innerText = "Success";
-    }
-    else{
-        output.innerText = "Error";
-    }
-})
+    
+}  )
