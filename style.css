@@ -1,7 +1,21 @@
 :root{
-    --primary-color: red;
+    --name-color : red;
+    --material-color : green;
+    --rating-color: blue;
 }
 
-#out-div{
-    color: var(--primary-color);
+.name{
+    color:var(--name-color);
 }
+.mater{
+    color:var(--material-color);
+}
+.rate{
+    color:var(--rating-color);
+}
+
+
+
+/* li:nth-child(1){
+    color: var(--name-color);
+} */

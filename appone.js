@@ -1,20 +1,36 @@
-var inputText = document.querySelector("#input-text");
-var inputNumber = document.querySelector("#input-number");
-var btn = document.querySelector("#sub-btn");
+var btn = document.querySelector("#btn-check");
 var output = document.querySelector("#out-div");
+var output2 = document.querySelector("#out-divv");
 
-btn.addEventListener("click",() => {
-    if(inputNumber.value % 2 === 0){
-        for(var i=0;i<inputNumber.value;i++){
-            output.innerText += inputText.value + "\n";
-            output.style.color = "red";
+var data = [
+    {
+        name:"Abhayaaa",
+        age:23,
+        gender:"male"
+    },
+    {
+        name:"ccmcccccca",
+        age:23,
+        gender:"female"
+    },
+    {
+        name:"Abhayaaa",
+        age:3,
+        gender:"mddale"
+    }
+]
+
+btn.addEventListener("click", () => {
+    for(var i=0;i<data.length;i++){
+        if(data[i].name.length > 5 && data[i].age > 18){
+            if(data[i].gender === "male"){
+                output.innerText += data[i].name + "\n";
+                output.style.color = "red";
+            }
+            else{
+                output.innerText += data[i].name + "\n";
+                output.style.color = "blue";
+            }
         }
     }
-    else{
-        for(var i=0;i<inputNumber.value;i++){
-            output.innerText += inputText.value + "\n";
-            output.style.color = "blue";
-        }
-    }
-    
-}  )
+})
