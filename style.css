@@ -1,21 +1,17 @@
 :root{
-    --name-color : red;
-    --material-color : green;
-    --rating-color: blue;
+    --red-color: red;
+    --green-color: green;
+    --blue-color: blue;
 }
 
-.name{
-    color:var(--name-color);
-}
-.mater{
-    color:var(--material-color);
-}
-.rate{
-    color:var(--rating-color);
+.re{
+    color: var(--red-color);
 }
 
+.gree{
+    color: var(--green-color);
+}
 
-
-/* li:nth-child(1){
-    color: var(--name-color);
-} */
+.blu{
+    color: var(--blue-color);
+}

@@ -1,36 +1,31 @@
-var btn = document.querySelector("#btn-check");
+var btn = document.querySelector("#btn-fetch");
 var output = document.querySelector("#out-div");
-var output2 = document.querySelector("#out-divv");
 
-var data = [
-    {
-        name:"Abhayaaa",
-        age:23,
-        gender:"male"
-    },
-    {
-        name:"ccmcccccca",
-        age:23,
-        gender:"female"
-    },
-    {
-        name:"Abhayaaa",
-        age:3,
-        gender:"mddale"
-    }
-]
+var serverURL = "https://mock-practice.prakhar10v.repl.co/items";
 
 btn.addEventListener("click", () => {
-    for(var i=0;i<data.length;i++){
-        if(data[i].name.length > 5 && data[i].age > 18){
-            if(data[i].gender === "male"){
-                output.innerText += data[i].name + "\n";
-                output.style.color = "red";
-            }
-            else{
-                output.innerText += data[i].name + "\n";
-                output.style.color = "blue";
+    fetch(serverURL)
+    .then(response => response.json())
+    .then(data => {
+        // var array = [];
+        // var name = [];
+        var highestPrice = 0;
+        for(var i=0;i<data.length;i++){
+            if(data[i].price > highestPrice){
+                var namee = data[i].item;
+                highestPrice = data[i].price;
             }
         }
-    }
+        output.innerText = namee + " " + highestPrice;
+        
+        // console.log(data.length);
+        // for(var i=0;i<data.length;i++){
+        //     var n = i+1;
+        //     if(data[i].price > data[n].price)
+        //     {
+        //         output.innerText = data[i].name;
+        //     }
+        // }
+        
+    } )
 })
