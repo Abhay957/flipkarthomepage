@@ -1,7 +1,7 @@
 :root{
     --red-color: red;
     --green-color: green;
-    --blue-color: blue;
+    
 }
 
 .re{
@@ -10,8 +10,4 @@
 
 .gree{
     color: var(--green-color);
-}
-
-.blu{
-    color: var(--blue-color);
 }

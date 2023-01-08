@@ -1,31 +1,36 @@
-var btn = document.querySelector("#btn-fetch");
+var input = document.querySelector("#input-number");
+var btn = document.querySelector("#btn-check");
 var output = document.querySelector("#out-div");
 
-var serverURL = "https://mock-practice.prakhar10v.repl.co/items";
-
-btn.addEventListener("click", () => {
-    fetch(serverURL)
-    .then(response => response.json())
-    .then(data => {
-        // var array = [];
-        // var name = [];
-        var highestPrice = 0;
-        for(var i=0;i<data.length;i++){
-            if(data[i].price > highestPrice){
-                var namee = data[i].item;
-                highestPrice = data[i].price;
-            }
+function automorphic(){
+    var inp = input.value;
+        if(inp.includes("a"))
+        {
+            output.innerText = "Auto";
         }
-        output.innerText = namee + " " + highestPrice;
-        
-        // console.log(data.length);
-        // for(var i=0;i<data.length;i++){
-        //     var n = i+1;
-        //     if(data[i].price > data[n].price)
-        //     {
-        //         output.innerText = data[i].name;
-        //     }
-        // }
-        
-    } )
-})
+        else if(inp.includes("e"))
+        {
+            output.innerText = "Auto";
+        }
+        else if(inp.includes("i"))
+        {
+            output.innerText = "Auto";
+        }
+        else if(inp.includes("o"))
+        {
+            output.innerText = "Auto";
+        }
+        else if(inp.includes("u"))
+        {
+            output.innerText = "Auto";
+        }
+        else{
+            output.innerText = "Basic";
+        }
+            
+}
+
+
+
+
+btn.addEventListener("click", automorphic)
