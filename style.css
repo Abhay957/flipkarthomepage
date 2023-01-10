@@ -1,4 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+body{
+    text-align: center;
+    font-family: 'Rubik Bubbles', cursive;
+    background-color: black;
+}
+
+:root{
+    --primary-color: yellow;
+    --secondary-color: green;
+}
+
+.prime{
+    color: var(--primary-color);
+    border: 0.5px solid var(--primary-color);
+    max-width: 200px;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.second{
+    color: var(--secondary-color);
+}
