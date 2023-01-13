@@ -7,11 +7,19 @@
    <title>Document</title>
 </head>
 <body>
-   <div>
-      <button id="btn-click" >Click</button>
-   </div>
-   <div id="out-div" ></div>
-   <div id="out-divv"></div>
-   <script src="appone.js" type="text/javascript" ></script>
+   <textarea id="text" ></textarea>
+   <button id="btn" >Helllo</button>
+   <script>
+      var txtArea = document.querySelector("#text");
+      var btn = document.querySelector("#btn");
+      txtArea.addEventListener("change",() => {
+         if(txtArea.value === `type`){
+            btn.disabled = true;
+         }
+         else{
+            btn.disabled = false;
+         }
+      })
+   </script>
 </body>
 </html>
