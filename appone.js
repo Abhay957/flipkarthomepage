@@ -1,16 +1,18 @@
-var p = document.querySelector("#ppp");
-var bone = document.querySelector("#b-one");
-var btwo = document.querySelector("#b-two")
-var bthree = document.querySelector("#b-three");
+var input = document.querySelector("#input-text");
+var green = document.querySelector("#btn-green");
+var blue = document.querySelector("#btn-blue");
+var output = document.querySelector("#out-div");
 
-bone.addEventListener("click",() => {
-    p.style.fontFamily = "'Rubik Bubbles', cursive";
+input.addEventListener("input",() => {
+    output.innerText = input.value;
 })
 
-btwo.addEventListener("click", () => {
-    p.style.fontFamily = "'Roboto', sans-serif";
+green.addEventListener("click",() => {
+    // output.style.color = "green";
+    output.classList.add("green");
 })
 
-bthree.addEventListener("click",() => {
-    p.style.fontFamily = "'Montserrat', sans-serif";
+blue.addEventListener("click",() => {
+    // output.style.color = "blue";
+    output.classList.add("blue");
 })
