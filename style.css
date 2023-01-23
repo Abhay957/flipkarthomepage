@@ -1,7 +1,5 @@
-.green{
-    color: green;
-}
-
-.blue{
-    color: blue;
+body{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
 }
