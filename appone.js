@@ -1,20 +1,8 @@
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+let a = document.body.getElementsByTagName('div')[0];
 
-const alert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
+let di = document.createElement("h1");
 
-  alertPlaceholder.append(wrapper)
-}
+di.innerHTML = 'Hello lets check whether its working or not';
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    alert('Nice, you triggered this alert message!', 'success')
-  })
-}
+// a.prepend(di);
+ a.replaceWith(di);
