@@ -1,4 +1,14 @@
-.styl{
+body{
     text-align: center;
-    color:tomato;
+    margin: auto;
+    align-items: center;
+}
+.bulb-container{
+    height: 341px;
+    width: 341px;
+    background-color: yellow;
+}
+#jk{
+    height: 341px;
+    width: 341px; 
 }
